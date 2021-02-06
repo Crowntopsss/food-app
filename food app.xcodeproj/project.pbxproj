@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D108B90625CF3FD700DBDDC9 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D108B90525CF3FD700DBDDC9 /* OnboardingViewController.swift */; };
 		D108B90B25CF520600DBDDC9 /* UiView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D108B90A25CF520600DBDDC9 /* UiView+Extension.swift */; };
+		D108B90E25CF5DC300DBDDC9 /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = D108B90D25CF5DC300DBDDC9 /* OnboardingSlide.swift */; };
 		D14BB4B825C604A300D3454B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14BB4B725C604A300D3454B /* AppDelegate.swift */; };
 		D14BB4BA25C604A300D3454B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14BB4B925C604A300D3454B /* SceneDelegate.swift */; };
 		D14BB4BF25C604A300D3454B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D14BB4BD25C604A300D3454B /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		D108B90525CF3FD700DBDDC9 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		D108B90A25CF520600DBDDC9 /* UiView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UiView+Extension.swift"; sourceTree = "<group>"; };
+		D108B90D25CF5DC300DBDDC9 /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
 		D14BB4B425C604A300D3454B /* food app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "food app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D14BB4B725C604A300D3454B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D14BB4B925C604A300D3454B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +44,7 @@
 		D108B90125CF3ED600DBDDC9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				D108B90D25CF5DC300DBDDC9 /* OnboardingSlide.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D108B90E25CF5DC300DBDDC9 /* OnboardingSlide.swift in Sources */,
 				D14BB4B825C604A300D3454B /* AppDelegate.swift in Sources */,
 				D14BB4BA25C604A300D3454B /* SceneDelegate.swift in Sources */,
 				D108B90B25CF520600DBDDC9 /* UiView+Extension.swift in Sources */,
