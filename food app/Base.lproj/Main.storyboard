@@ -18,22 +18,58 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="pq2-bm-Kmb">
-                                <rect key="frame" x="0.0" y="44" width="414" height="684"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="684.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="H2I-UU-pp6">
-                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="itemSize" width="411" height="632"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ALU-61-3MC">
-                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="OnboardingCollectionViewCell" id="ALU-61-3MC" customClass="OnboardingCollectionViewCell" customModule="food_app" customModuleProvider="target">
+                                        <rect key="frame" x="1.5" y="0.0" width="411" height="632"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="N5T-rV-MZR">
-                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="411" height="632"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0c7-gv-BOL">
+                                                    <rect key="frame" x="0.0" y="8" width="411" height="485"/>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="mcM-Lg-Efo">
+                                                    <rect key="frame" x="16" y="529" width="379" height="87"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quick Delivery at your door step" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4iX-SB-zZS">
+                                                            <rect key="frame" x="19" y="0.0" width="341.5" height="30"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home delivery and online reservation for online restuarant and Hotel" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EFN-GW-tg4">
+                                                            <rect key="frame" x="9" y="46" width="361" height="41"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" systemColor="systemGray2Color"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="mcM-Lg-Efo" secondAttribute="bottom" constant="16" id="2kM-tj-UzO"/>
+                                                <constraint firstAttribute="trailing" secondItem="mcM-Lg-Efo" secondAttribute="trailing" constant="16" id="TVn-ZE-wYL"/>
+                                                <constraint firstAttribute="trailing" secondItem="0c7-gv-BOL" secondAttribute="trailing" id="U4Q-Vc-qLH"/>
+                                                <constraint firstItem="0c7-gv-BOL" firstAttribute="top" secondItem="N5T-rV-MZR" secondAttribute="top" id="Y2b-fe-onw"/>
+                                                <constraint firstItem="0c7-gv-BOL" firstAttribute="leading" secondItem="N5T-rV-MZR" secondAttribute="leading" id="iWq-Fh-o2O"/>
+                                                <constraint firstItem="mcM-Lg-Efo" firstAttribute="leading" secondItem="N5T-rV-MZR" secondAttribute="leading" constant="16" id="uGn-75-cqu"/>
+                                            </constraints>
                                         </collectionViewCellContentView>
+                                        <size key="customSize" width="411" height="632"/>
+                                        <connections>
+                                            <outlet property="slideDescriptionLbl" destination="EFN-GW-tg4" id="aRP-rQ-yPF"/>
+                                            <outlet property="slideImageView" destination="0c7-gv-BOL" id="nM6-ad-Bob"/>
+                                            <outlet property="slideTitleLbl" destination="4iX-SB-zZS" id="NZk-40-Dc1"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -60,7 +96,7 @@
                                 </connections>
                             </button>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="LLr-rY-Nkq">
-                                <rect key="frame" x="145.5" y="728" width="123" height="28"/>
+                                <rect key="frame" x="146" y="728.5" width="122.5" height="27.5"/>
                                 <color key="pageIndicatorTintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="currentPageIndicatorTintColor" red="0.7843137255" green="0.054901960780000002" blue="0.054901960780000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </pageControl>
@@ -92,6 +128,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

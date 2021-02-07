@@ -15,6 +15,7 @@
 		D14BB4BF25C604A300D3454B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D14BB4BD25C604A300D3454B /* Main.storyboard */; };
 		D14BB4C125C604A600D3454B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D14BB4C025C604A600D3454B /* Assets.xcassets */; };
 		D14BB4C425C604A600D3454B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D14BB4C225C604A600D3454B /* LaunchScreen.storyboard */; };
+		D1F4D22325D0920A00AF9E0A /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F4D22225D0920A00AF9E0A /* OnboardingCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		D14BB4C025C604A600D3454B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D14BB4C325C604A600D3454B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D14BB4C525C604A600D3454B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1F4D22225D0920A00AF9E0A /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				D108B90525CF3FD700DBDDC9 /* OnboardingViewController.swift */,
+				D1F4D22225D0920A00AF9E0A /* OnboardingCollectionViewCell.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 				D14BB4BA25C604A300D3454B /* SceneDelegate.swift in Sources */,
 				D108B90B25CF520600DBDDC9 /* UiView+Extension.swift in Sources */,
 				D108B90625CF3FD700DBDDC9 /* OnboardingViewController.swift in Sources */,
+				D1F4D22325D0920A00AF9E0A /* OnboardingCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
