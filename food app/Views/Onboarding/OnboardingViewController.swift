@@ -13,7 +13,7 @@ class OnboardingViewController: UIViewController {
     @IBOutlet weak var nextBtn: UIButton!
     @IBOutlet weak var pageControl: UIPageControl!
     
-    var slides: [OnboardingSlide] = [OnboardingSlide(title:"Delicious Dishes", description: "Experience a variety of amazing dishes form different countries", image:#imageLiteral(resourceName: "slide3") ),OnboardingSlide(title:"World Class Chef", description: "Experience a variety of amazing dishes form different countries from different places", image:#imageLiteral(resourceName: "slide1") ),OnboardingSlide(title:"Instant Delivery", description: "Experience a variety of amazing you will be so happy to see everything", image:#imageLiteral(resourceName: "slide2") )]
+    var slides: [OnboardingSlide] = []
     
     var currentPage = 0 {
         didSet{
@@ -34,7 +34,9 @@ class OnboardingViewController: UIViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
         
+        slides = [OnboardingSlide(title:"Delicious Dishes", description: "Experience a variety of amazing dishes form different countries", image:#imageLiteral(resourceName: "slide3") ),OnboardingSlide(title:"World Class Chef", description: "Experience a variety of amazing dishes form different countries from different places", image:#imageLiteral(resourceName: "slide1") ),OnboardingSlide(title:"Instant Delivery", description: "Experience a variety of amazing you will be so happy to see everything", image:#imageLiteral(resourceName: "slide2") )]
         
+        pageControl.numberOfPages = slides.count
     }
     
 
@@ -44,6 +46,7 @@ class OnboardingViewController: UIViewController {
             controller.modalPresentationStyle = .fullScreen
             controller.modalTransitionStyle = .flipHorizontal
             present(controller, animated: true, completion: nil)
+            
         }else{
             currentPage += 1
             let indexPath = IndexPath(item: currentPage, section: 0)
