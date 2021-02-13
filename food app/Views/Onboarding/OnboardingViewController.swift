@@ -15,7 +15,18 @@ class OnboardingViewController: UIViewController {
     
     var slides: [OnboardingSlide] = [OnboardingSlide(title:"Delicious Dishes", description: "Experience a variety of amazing dishes form different countries", image:#imageLiteral(resourceName: "slide3") ),OnboardingSlide(title:"World Class Chef", description: "Experience a variety of amazing dishes form different countries from different places", image:#imageLiteral(resourceName: "slide1") ),OnboardingSlide(title:"Instant Delivery", description: "Experience a variety of amazing you will be so happy to see everything", image:#imageLiteral(resourceName: "slide2") )]
     
-    var currentPage = 0
+    var currentPage = 0 {
+        didSet{
+            pageControl.currentPage = currentPage
+            if currentPage == slides.count - 1 {
+                nextBtn.setTitle("Get Started", for: .normal)
+            }else {
+                nextBtn.setTitle("Next", for: .normal)
+            }
+            
+        }
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +39,17 @@ class OnboardingViewController: UIViewController {
     
 
     @IBAction func nextBtnClicked(_ sender: Any) {
+        if currentPage == slides.count - 1{
+            let controller =  storyboard?.instantiateViewController(identifier: "HomeNC") as! UINavigationController
+            controller.modalPresentationStyle = .fullScreen
+            controller.modalTransitionStyle = .flipHorizontal
+            present(controller, animated: true, completion: nil)
+        }else{
+            currentPage += 1
+            let indexPath = IndexPath(item: currentPage, section: 0)
+            collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
+        }
+        
     }
     
 }
@@ -48,6 +70,6 @@ extension OnboardingViewController: UICollectionViewDelegate, UICollectionViewDa
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         let width = scrollView.frame.width
         currentPage = Int(scrollView.contentOffset.x / width)
-        pageControl.currentPage = currentPage
+        
     }
 }
