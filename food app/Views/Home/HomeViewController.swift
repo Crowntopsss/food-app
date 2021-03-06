@@ -22,6 +22,7 @@ class HomeViewController: UIViewController {
         
     override func viewDidLoad() {
         super.viewDidLoad()
+        registerCells()
   
     }
     private func registerCells(){
@@ -36,6 +37,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: CategoryCollectionViewCell.indentifer, for: indexPath) as! CategoryCollectionViewCell
+        cell.setup(category: categories[indexPath.row])
         return cell 
     }
 }
