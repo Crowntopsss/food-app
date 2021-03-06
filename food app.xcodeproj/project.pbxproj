@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,6 +20,7 @@
 		D1F2A85425EC297100B92B84 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F2A85225EC297100B92B84 /* CategoryCollectionViewCell.swift */; };
 		D1F2A85525EC297100B92B84 /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1F2A85325EC297100B92B84 /* CategoryCollectionViewCell.xib */; };
 		D1F2A85825EC3EF500B92B84 /* DishCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F2A85725EC3EF500B92B84 /* DishCategory.swift */; };
+		D1F2A85F25EC4A5300B92B84 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F2A85E25EC4A5300B92B84 /* String+Extension.swift */; };
 		D1F4D22325D0920A00AF9E0A /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F4D22225D0920A00AF9E0A /* OnboardingCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		D1F2A85225EC297100B92B84 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		D1F2A85325EC297100B92B84 /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
 		D1F2A85725EC3EF500B92B84 /* DishCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishCategory.swift; sourceTree = "<group>"; };
+		D1F2A85E25EC4A5300B92B84 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		D1F4D22225D0920A00AF9E0A /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,7 +72,6 @@
 				70236633D953209BCCBFC812 /* Pods-food app.debug.xcconfig */,
 				6D42C9C8B06FD5C411952490 /* Pods-food app.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -113,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				D108B90A25CF520600DBDDC9 /* UiView+Extension.swift */,
+				D1F2A85E25EC4A5300B92B84 /* String+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -300,6 +302,7 @@
 				D108B90625CF3FD700DBDDC9 /* OnboardingViewController.swift in Sources */,
 				D155DBD225D85F0700C388FF /* HomeViewController.swift in Sources */,
 				D1F2A85825EC3EF500B92B84 /* DishCategory.swift in Sources */,
+				D1F2A85F25EC4A5300B92B84 /* String+Extension.swift in Sources */,
 				D1F4D22325D0920A00AF9E0A /* OnboardingCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
