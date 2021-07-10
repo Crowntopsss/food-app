@@ -7,6 +7,7 @@
 
 import UIKit
 
+
 extension UIView{
     @IBInspectable var conerRadius : CGFloat{
         get{return self.conerRadius}
