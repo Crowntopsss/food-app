@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -106,7 +107,7 @@
                                 </connections>
                             </button>
                             <pageControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="LLr-rY-Nkq">
-                                <rect key="frame" x="146" y="728.5" width="122.5" height="27.5"/>
+                                <rect key="frame" x="146.5" y="728.5" width="121.5" height="27.5"/>
                                 <color key="pageIndicatorTintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="currentPageIndicatorTintColor" red="0.7843137255" green="0.054901960780000002" blue="0.054901960780000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </pageControl>
@@ -234,8 +235,8 @@
                                                             </collectionViewCell>
                                                         </cells>
                                                         <connections>
-                                                            <outlet property="dataSource" destination="Nv4-9F-QA5" id="saz-jq-rrp"/>
-                                                            <outlet property="delegate" destination="Nv4-9F-QA5" id="dpu-ch-XBI"/>
+                                                            <outlet property="dataSource" destination="Nv4-9F-QA5" id="EpF-VL-FwR"/>
+                                                            <outlet property="delegate" destination="Nv4-9F-QA5" id="8QN-QS-l9E"/>
                                                         </connections>
                                                     </collectionView>
                                                 </subviews>
@@ -327,6 +328,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="categoryCollectionView" destination="li5-cp-AHb" id="9sw-QF-Z4G"/>
+                        <outlet property="popularCollectionView" destination="9aa-f3-ygf" id="A2m-gz-oaC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dZ1-og-YTR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

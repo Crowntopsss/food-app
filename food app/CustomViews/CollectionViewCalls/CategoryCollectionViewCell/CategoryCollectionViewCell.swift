@@ -10,14 +10,14 @@ import Kingfisher
 
 class CategoryCollectionViewCell: UICollectionViewCell {
     
-    static let indentifer = String(describing: CategoryCollectionViewCell.self)
+    static let indentifier = String(describing: CategoryCollectionViewCell.self)
     
     @IBOutlet weak var categoryImageView: UIImageView!
     @IBOutlet weak var categoryTitleLbl: UILabel!
     
     func setup(category: DishCategory){
         categoryTitleLbl.text =  category.name
-        categoryImageView.kf.setImage(with: category.image.asUrl)
+        categoryImageView.kf.setImage(with: category.image?.asUrl)
     }
 }
 
