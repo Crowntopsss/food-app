@@ -10,3 +10,8 @@ import Foundation
 struct DishCategory {
     let id,name,image: String?
 }
+
+struct Orders {
+    let id,name: String?
+    let dish : Dish?
+}
