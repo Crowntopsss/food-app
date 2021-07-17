@@ -18,7 +18,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="293" height="100"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="622-GQ-D5J">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="622-GQ-D5J" customClass="CardView" customModule="food_app" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="293" height="100"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BDh-jM-qUg">
