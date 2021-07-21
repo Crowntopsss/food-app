@@ -30,11 +30,16 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hPj-Oc-od3">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hPj-Oc-od3">
                                         <rect key="frame" x="0.0" y="35.5" width="134" height="200"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="200" id="2g4-Np-xwx"/>
                                         </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="conerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GAC-KS-U1K">
                                         <rect key="frame" x="0.0" y="243.5" width="134" height="14.5"/>
@@ -52,6 +57,8 @@
                                 <constraints>
                                     <constraint firstItem="M7T-na-xJ8" firstAttribute="top" secondItem="GAC-KS-U1K" secondAttribute="bottom" constant="8" id="4OB-8K-Oxs"/>
                                     <constraint firstItem="GAC-KS-U1K" firstAttribute="top" secondItem="hPj-Oc-od3" secondAttribute="bottom" constant="8" id="FH8-O9-ech"/>
+                                    <constraint firstAttribute="trailing" secondItem="M7T-na-xJ8" secondAttribute="trailing" id="RIO-DR-rXy"/>
+                                    <constraint firstItem="M7T-na-xJ8" firstAttribute="leading" secondItem="OxF-R9-hyz" secondAttribute="leading" id="Srv-gH-ksU"/>
                                     <constraint firstItem="hPj-Oc-od3" firstAttribute="top" secondItem="Nml-wJ-HTv" secondAttribute="bottom" constant="8" id="mnN-PU-4LI"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
@@ -66,6 +73,7 @@
                             <constraint firstItem="OxF-R9-hyz" firstAttribute="leading" secondItem="Kl5-If-waJ" secondAttribute="leading" constant="8" id="7hv-38-ZJw"/>
                             <constraint firstAttribute="trailing" secondItem="OxF-R9-hyz" secondAttribute="trailing" constant="8" id="8ic-my-Erp"/>
                             <constraint firstAttribute="bottom" secondItem="OxF-R9-hyz" secondAttribute="bottom" constant="8" id="TNO-Rb-Knd"/>
+                            <constraint firstAttribute="width" constant="150" id="Wbl-FY-lHV"/>
                             <constraint firstItem="OxF-R9-hyz" firstAttribute="top" secondItem="Kl5-If-waJ" secondAttribute="top" constant="8" id="niS-gT-X66"/>
                         </constraints>
                     </view>

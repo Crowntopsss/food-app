@@ -59,6 +59,7 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstAttribute="width" constant="293" id="10h-t6-bjB"/>
                             <constraint firstItem="BDh-jM-qUg" firstAttribute="leading" secondItem="622-GQ-D5J" secondAttribute="leading" constant="16" id="7dr-WV-qQY"/>
                             <constraint firstItem="BDh-jM-qUg" firstAttribute="top" secondItem="622-GQ-D5J" secondAttribute="top" constant="16" id="Aol-CN-GFb"/>
                             <constraint firstItem="PK0-7m-yce" firstAttribute="leading" secondItem="BDh-jM-qUg" secondAttribute="trailing" constant="16" id="Hb9-VD-Gex"/>
