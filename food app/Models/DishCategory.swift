@@ -7,11 +7,18 @@
 
 import Foundation
 
-struct DishCategory {
+struct DishCategory: Decodable {
     let id,name,image: String?
 }
 
-struct Orders {
+struct Orders: Decodable {
     let id,name: String?
     let dish : Dish?
+}
+
+
+struct AllDishes: Decodable {
+    let categories: [DishCategory]?
+    let populars: [Dish]?
+    let specials: [Dish]?
 }
