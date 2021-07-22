@@ -1,13 +1,16 @@
 # Yummie-App
 #### This is a food ordering application. 
-# Language
+## Language
 - Swift 5
-# Tools 
+## Tools 
 - Xcode 12
-# Deployment info
+## Deployment info
 - iOS 13
-# Target Device
+## Target Device
 - iPhone
+## Technical Details
+- Used MVC architecture
+- Created views with storyboard
 
 
 <img width="343" alt="Screenshot 2021-06-18 at 19 29 47" src="https://user-images.githubusercontent.com/35179563/122603275-fd9dfe00-d06b-11eb-9821-d3732eb274df.png">
