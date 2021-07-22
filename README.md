@@ -1,4 +1,4 @@
-# Yummie-App
+# Food ordering -App
 #### This is a food ordering application. 
 ## Language
 - Swift 5
